@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    position: fixed;
+    top: 5%;
+    left: 0%;
+    padding: 20px, 10px;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+.logo{
+    color: #f5140c;
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: none;
+}
+.logo span{color: aqua;}
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{list-style: none;display: flex;}
+.navbar a{
+    color: beige;
+    text-decoration: none;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.bouton{
+    
+    background: #070707;
+    text-transform: uppercase;
+    border-radius: 10ch;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: -10px;
+}
+.bouton:hover{
+    background: rgb(235, 60, 147) ;
+    transition: ease-in-out;
+}
+header .navbar li a:hover{
+    color: hsl(12, 97%, 56%);
+    border-bottom: 2px solid fuchsia;
+}
+
+.banier1{
+    height: 50px;
+    position: relative;
+    width:100%;
+    min-height: 60rch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;background-image: url(./images.jpg);
+    
+}
+.contenu1 h1{
+    color: rgb(219, 108, 17);
+    text-transform: uppercase;
+    font-family:  Georgia, serif;
+    font-size: 4em;
+    box-shadow: #070707;
+    text-align: center;
+}
+.contenu1 h2{
+    color: rgb(19, 241, 75);
+    text-transform: initial;
+    font-size: 2.2em;
+    text-align: center;
+}
+.contenu1 p{
+    color: blanchedalmond;
+    font-style: normal;
+}
+.contenu2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #fa1212;
+}
+.contenu2 a{
+    text-decoration: none;
+    color: beige;
+    padding: 15px 15px;
+}
+.contenu2 a:hover{
+    letter-spacing: 3px;
+
+}
+::-webkit-scrollbar{
+    width: 8px;
+    height: 5px;
+}
+.banier2{
+    display: flex;
+    flex-direction: column;
+}
+.banier2 h1{
+    height: calc(100vh 80px);
+    text-align: center;
+    text-transform: capitalize;
+    color: #df1616;
+}
+.contenu3{
+    color: #f5140c;
+
+}
+.banier2{
+    height: 50px;
+    position: relative;
+    width:100%;
+    min-height: 60rch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    
+}
+#histoire{
+    height: 50vh;
+    margin: 0 10%; 
+    background: #3b3434;
+}
+.baier3{
+    height: 50px;
+    position: relative;
+    width:100%;
+    min-height: 60rch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hwb(0 21% 13%);
+
+}
+.products-container {
+    display: flex; /* Utilise flexbox pour disposer les produits côte à côte */
+    justify-content: space-around; /* Répartit uniformément l'espace entre les produits */
+    align-items: flex-start; /* Alignement au début pour gérer correctement les éléments de hauteur différente */
+}
+
+.product {
+    flex-basis: 30%; /* Chaque produit prend environ 30% de l'espace disponible */
+    text-align: center; /* Centre le contenu à l'intérieur de chaque produit */
+}
+
+.product img {
+    width: 100%; /* Permet aux images de remplir leur conteneur */
+    height: 300px; /* Maintient l'aspect ratio des images */
+}
+
+.description ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding par défaut */
+    margin-top: 10px; /* Ajoute un peu d'espace au-dessus de la description */
+}
+
+footer {
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: 20px 0; /* Espacement intérieur */
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 20px; /* Espacement sous le texte */
+}
+
+.product1 {
+    display: inline-block; /* Affichage côte à côte */
+    margin: 0 10px; /* Espacement entre chaque bloc */
+    width: 20%; /* Largeur de chaque bloc */
+    vertical-align: top; /* Alignement vertical */
+}
+
+.product1 img {
+    width: 20px; /* Taille des images */
+    height: 20px; 
+    margin-bottom: 10px; /* Espacement sous l'image */
+}
+
+.description ul {
+    list-style-type: none; /* Pas de puces */
+    padding: 0; /* Pas d'espacement intérieur */
+    margin: 0; /* Pas de marge */
+}
+
+.description li {
+    line-height: 1.6; /* Espacement entre les lignes */
+}
+
+@media (max-width: 768px) {
+    .product1 {
+        display: block; /* Affichage en bloc (un par ligne) sur petits écrans */
+        margin: 10px auto; /* Centrage avec une marge */
+        width: auto; /* Largeur automatique */
+    }
+}
+
+
